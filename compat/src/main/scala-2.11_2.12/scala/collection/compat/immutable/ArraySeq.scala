@@ -127,7 +127,7 @@ object ArraySeq {
     lazy val elemTag         = ClassTag[T](unsafeArray.getClass.getComponentType)
     def length: Int          = unsafeArray.length
     def apply(index: Int): T = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: T): Unit = unsupportedUpdate
     override def hashCode                 = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
