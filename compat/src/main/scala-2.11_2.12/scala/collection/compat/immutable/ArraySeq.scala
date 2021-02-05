@@ -129,7 +129,7 @@ object ArraySeq {
     def apply(index: Int): T = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: T): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                 = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofRef[_] =>
         arrayEquals(unsafeArray.asInstanceOf[Array[AnyRef]],
@@ -145,7 +145,7 @@ object ArraySeq {
     def apply(index: Int): Byte = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Byte): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofByte => Arrays.equals(unsafeArray, that.unsafeArray)
       case _            => super.equals(that)
@@ -159,7 +159,7 @@ object ArraySeq {
     def apply(index: Int): Short = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Short): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                     = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofShort => Arrays.equals(unsafeArray, that.unsafeArray)
       case _             => super.equals(that)
@@ -173,7 +173,7 @@ object ArraySeq {
     def apply(index: Int): Char = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Char): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofChar => Arrays.equals(unsafeArray, that.unsafeArray)
       case _            => super.equals(that)
@@ -187,7 +187,7 @@ object ArraySeq {
     def apply(index: Int): Int = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Int): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                   = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofInt => Arrays.equals(unsafeArray, that.unsafeArray)
       case _           => super.equals(that)
@@ -201,7 +201,7 @@ object ArraySeq {
     def apply(index: Int): Long = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Long): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofLong => Arrays.equals(unsafeArray, that.unsafeArray)
       case _            => super.equals(that)
@@ -215,7 +215,7 @@ object ArraySeq {
     def apply(index: Int): Float = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Float): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                     = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofFloat => Arrays.equals(unsafeArray, that.unsafeArray)
       case _             => super.equals(that)
@@ -229,7 +229,7 @@ object ArraySeq {
     def apply(index: Int): Double = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Double): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                      = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofDouble => Arrays.equals(unsafeArray, that.unsafeArray)
       case _              => super.equals(that)
@@ -245,7 +245,7 @@ object ArraySeq {
     def apply(index: Int): Boolean = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Boolean): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                       = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofBoolean => Arrays.equals(unsafeArray, that.unsafeArray)
       case _               => super.equals(that)
@@ -259,7 +259,7 @@ object ArraySeq {
     def apply(index: Int): Unit = unsafeArray(index)
     @deprecated(updateDeprecationMsg, since = "2.3.3")
     def update(index: Int, elem: Unit): Unit = unsupportedUpdate
-    override def hashCode = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
+    override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
       case that: ofUnit => unsafeArray.length == that.unsafeArray.length
       case _            => super.equals(that)
