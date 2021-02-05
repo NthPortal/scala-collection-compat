@@ -143,7 +143,7 @@ object ArraySeq {
     def elemTag                 = ClassTag.Byte
     def length: Int             = unsafeArray.length
     def apply(index: Int): Byte = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Byte): Unit = unsupportedUpdate
     override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -157,7 +157,7 @@ object ArraySeq {
     def elemTag                  = ClassTag.Short
     def length: Int              = unsafeArray.length
     def apply(index: Int): Short = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Short): Unit = unsupportedUpdate
     override def hashCode                     = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -171,7 +171,7 @@ object ArraySeq {
     def elemTag                 = ClassTag.Char
     def length: Int             = unsafeArray.length
     def apply(index: Int): Char = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Char): Unit = unsupportedUpdate
     override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -185,7 +185,7 @@ object ArraySeq {
     def elemTag                = ClassTag.Int
     def length: Int            = unsafeArray.length
     def apply(index: Int): Int = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Int): Unit = unsupportedUpdate
     override def hashCode                   = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -199,7 +199,7 @@ object ArraySeq {
     def elemTag                 = ClassTag.Long
     def length: Int             = unsafeArray.length
     def apply(index: Int): Long = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Long): Unit = unsupportedUpdate
     override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -213,7 +213,7 @@ object ArraySeq {
     def elemTag                  = ClassTag.Float
     def length: Int              = unsafeArray.length
     def apply(index: Int): Float = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Float): Unit = unsupportedUpdate
     override def hashCode                     = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -227,7 +227,7 @@ object ArraySeq {
     def elemTag                   = ClassTag.Double
     def length: Int               = unsafeArray.length
     def apply(index: Int): Double = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Double): Unit = unsupportedUpdate
     override def hashCode                      = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -243,7 +243,7 @@ object ArraySeq {
     def elemTag                    = ClassTag.Boolean
     def length: Int                = unsafeArray.length
     def apply(index: Int): Boolean = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Boolean): Unit = unsupportedUpdate
     override def hashCode                       = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
@@ -257,7 +257,7 @@ object ArraySeq {
     def elemTag                 = ClassTag.Unit
     def length: Int             = unsafeArray.length
     def apply(index: Int): Unit = unsafeArray(index)
-    @deprecated(updateDeprecationMsg, since = "2.3.3")
+    @deprecated(updateDeprecationMsg, since = "2.4.2")
     def update(index: Int, elem: Unit): Unit = unsupportedUpdate
     override def hashCode                    = MurmurHash3.arrayHash(unsafeArray, MurmurHash3.seqSeed)
     override def equals(that: Any) = that match {
